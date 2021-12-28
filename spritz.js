@@ -33,8 +33,11 @@ function spritz(){
     if(wpm < 1){
         return;
     }
-    var selection = getSelectionText();
+    //var selection = getSelectionText();
+    var selection = document.getElementById("pastebox").value;
+    
     if(selection){
+		console.log(selection);
         spritzify(selection);
     }
     else{
@@ -127,9 +130,9 @@ function spritzify(input){
 
     function stopSpritz() {
 		clearTimeouts();
-        //~ for(var i = 0; i < spritz_timers.length; i++) {
-            //~ clearTimeout(spritz_timers[i]);
-        //~ }
+        for(var i = 0; i < spritz_timers.length; i++) {
+            clearTimeout(spritz_timers[i]);
+        }
 
     }
    
@@ -202,10 +205,12 @@ function getSelectionText() {
             text = document.selection.createRange().text;
         }
     }
+    
     if(text === ""){
         return false;
     }
     else{
+		
         return text;
     }
 }
@@ -250,4 +255,3 @@ function selectText(containerid) {
             window.getSelection().addRange(range);
         }
     }
-

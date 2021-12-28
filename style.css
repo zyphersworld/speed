@@ -1,11 +1,12 @@
 body{
     margin: 0px;
+    background-color: #333333;
 }
 
 #spritz_holder{
 
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    background-color: #ffffff;
+    background-color: #333333;
     
 /*
     position: fixed;
@@ -29,9 +30,9 @@ body{
 }
 
 #spritz_container{
-    background-color: #ffffff;
+    background-color: #111111;
     /* 600px+; small tablet portrait */
-    width: 420px;
+    width: 777px;
     margin-left: auto;
     margin-right: auto;
     line-height: 43px;
@@ -44,15 +45,15 @@ body{
     padding-top: 9px;
     padding-bottom: 9px;
     min-height: 40px;
-    font-size: 32px;
+    font-size: 64px;
 }
 
 #guide_top, #guide_bottom{
     text-align: center;
     font-family: 'Droid Sans Mono', sans-serif;
-    color: #dddddd;
+    color: #333;
     /* 600px+; small tablet portrait */
-    font-size: 32px;
+    font-size: 64px;
 }
 
 #notch{
@@ -62,7 +63,7 @@ body{
     /* 600px+; small tablet portrait */
     margin-top: 9px;
     padding-top: 12px;
-    font-size: 32px;
+    font-size: 64px;
 }
 
 #spritz_credits{
@@ -86,17 +87,17 @@ body{
 
 .invisible{
     font-family: 'Droid Sans Mono', sans-serif;
-    color: #ffffff;
+    color: #111111;
     position: static;
     font-size:10px;
 }
 
 .start, .pivot, .end, .spritz_start, .spritz_pivot, .spritz_end{
-    color: #333333;
+    color: #cccccc;
     text-align: center;
     font-family: 'Droid Sans Mono', sans-serif;
     /* 600px+; small tablet portrait */
-    font-size: 36px;
+    font-size: 64px;
 }
 .pivot, .spritz_pivot{
     color: #de0000;
